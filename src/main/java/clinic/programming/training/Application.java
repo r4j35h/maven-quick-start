@@ -1,5 +1,6 @@
 package clinic.programming.training;
 import java.util.stream.IntStream;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
     
@@ -17,6 +18,9 @@ public class Application {
         System.out.println(IntStream.of(values).count());
         System.out.println(IntStream.of(values).sum());
         System.out.println(IntStream.of(values).max());
+        
+        String[] separateWords = org.apache.commons.lang3.StringUtils.split("abcd egffl and", ' ');
+        System.out.println("separateWords: " + separateWords);
         
     }
 }
